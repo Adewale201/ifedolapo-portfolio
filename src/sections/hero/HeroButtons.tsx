@@ -4,15 +4,22 @@ import Button from "../../components/ui/Button";
 const HeroButtons = () => {
   return (
     <div className="mt-10 flex flex-wrap gap-4">
-      <Button>
-        Explore Projects
-        <ArrowRight size={18} strokeWidth={1.75} />
-      </Button>
+      <a href="#projects">
+        <Button>
+          Explore Projects
+          <ArrowRight size={18} strokeWidth={1.75} />
+        </Button>
+      </a>
 
-      <Button variant="secondary">
-        Download Résumé
-        <Download size={18} strokeWidth={1.75} />
-      </Button>
+      <a
+        href="/Ifedolapo-Egberongbe-Resume.pdf"
+        download="Ifedolapo-Egberongbe-Resume.pdf"
+      >
+        <Button variant="secondary">
+          Download CV
+          <Download size={18} strokeWidth={1.75} />
+        </Button>
+      </a>
     </div>
   );
 };

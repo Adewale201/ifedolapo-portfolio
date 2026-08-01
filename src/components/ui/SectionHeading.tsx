@@ -1,37 +1,26 @@
-import clsx from "clsx";
-
 interface SectionHeadingProps {
-  eyebrow?: string;
+  eyebrow: string;
   title: string;
   description?: string;
-  align?: "left" | "center";
 }
 
 const SectionHeading = ({
   eyebrow,
   title,
   description,
-  align = "left",
 }: SectionHeadingProps) => {
   return (
-    <div
-      className={clsx(
-        "mb-16 max-w-3xl",
-        align === "center" && "mx-auto text-center"
-      )}
-    >
-      {eyebrow && (
-        <p className="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-[var(--color-accent)]">
-          {eyebrow}
-        </p>
-      )}
+    <div className="max-w-3xl">
+      <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--color-accent)] sm:text-sm">
+        {eyebrow}
+      </p>
 
-      <h2 className="font-['Space_Grotesk'] text-4xl font-bold leading-tight text-[var(--color-primary)] md:text-5xl">
+      <h2 className="mt-4 font-['Space_Grotesk'] text-3xl font-bold leading-tight text-[var(--color-primary)] sm:text-4xl lg:text-5xl">
         {title}
       </h2>
 
       {description && (
-        <p className="mt-5 text-lg leading-8 text-[var(--color-secondary)]">
+        <p className="mt-6 text-base leading-7 text-[var(--color-secondary)] sm:text-lg sm:leading-8">
           {description}
         </p>
       )}
