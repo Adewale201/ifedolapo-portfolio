@@ -1,75 +1,34 @@
-# React + TypeScript + Vite
+# Ifedolapo Adewale — Software Engineering Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+I'm a software engineer based in Lagos, Nigeria, working with React, JavaScript, Node.js, Express, REST APIs, Tailwind CSS and WordPress.
 
-Currently, two official plugins are available:
+## Review my work
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+[Read three selected case studies](CASE_STUDIES.md):
 
-## React Compiler
+- **ROOTED:** a botanical landing page built with React, Vite and Tailwind CSS.
+- **UniStay:** an ongoing Nigerian student accommodation platform using React, Node.js and Express. It is still in development.
+- **Personal portfolio:** component-based frontend work with project previews, experience and contact sections.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Each case study explains the brief, my contribution, tools and current deliverable. Project screenshots and source links are provided where available. No unverified business metrics are claimed.
 
-## Expanding the ESLint configuration
+## Work with me
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+I can help with React interfaces, backend endpoints, API integrations, website redesigns, fixes and ongoing maintenance. I'm open to freelance work, agency collaboration, remote software engineering roles and internships.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+[Message me on LinkedIn](https://www.linkedin.com/in/egberongbe-ifedolapo/) · [GitHub](https://github.com/Adewale201)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Run this portfolio locally
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+This project uses React, TypeScript and Vite.
 
+```sh
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+For a production build:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```sh
+npm run build
 ```
